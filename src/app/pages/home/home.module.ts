@@ -7,13 +7,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 
 
 @NgModule({
   declarations: [HomeComponent],
   imports: [
-    CommonModule, HomeRoutingModule, NavModule, MatButtonModule, MatIconModule, MatMenuModule, RouterModule
+    CommonModule, HomeRoutingModule, NavModule, MatButtonModule, MatIconModule, MatMenuModule, RouterModule, 
+    MatButtonToggleModule
   ],
   exports: [HomeComponent]
 })
