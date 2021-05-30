@@ -1,0 +1,17 @@
+.mat-card-title {
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.item-detail {
+    text-align: left !important;
+    font-weight: normal !important;
+}
+
+.item {
+    float: right;
+    font-weight: normal;
+}

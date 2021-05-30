@@ -1,0 +1,70 @@
+<h1 mat-dialog-title>Dialog with elements</h1>
+<div mat-dialog-content>
+  <form>
+    <mat-form-field class="max-width" appearance="fill">
+      <mat-label>Category</mat-label>
+      <mat-select name="category" [(ngModel)]="request.category">
+        <mat-option value="laboratory procedure">Laboratory procedure</mat-option>
+        <mat-option value="imaging">Imaging</mat-option>
+        <mat-option value="counselling">Counselling</mat-option>
+        <mat-option value="education">Education</mat-option>
+        <mat-option value="surgical procedure">Surgical procedure</mat-option>
+      </mat-select>
+    </mat-form-field> <br>
+    <mat-form-field class="max-width" appearance="fill">
+      <mat-label>Intent</mat-label>
+      <mat-select name="intent" [(ngModel)]="request.intent">
+        <mat-option value="proposal">proposal</mat-option>
+        <mat-option value="plan">plan</mat-option>
+        <mat-option value="directive">directive</mat-option>
+        <mat-option value="order">order</mat-option>
+        <mat-option value="original-order">original-order</mat-option>
+        <mat-option value="reflex-order">reflex-order</mat-option>
+        <mat-option value="filler-order">filler-order</mat-option>
+        <mat-option value="instance-order">instance-order</mat-option>
+        <mat-option value="option">option</mat-option>
+      </mat-select>
+    </mat-form-field> <br>
+    <mat-form-field class="max-width">
+      <mat-label>Subject</mat-label>
+      <input type="text" name="subject" matInput [(ngModel)]="request.subject">
+    </mat-form-field> <br>
+    <mat-form-field class="max-width" appearance="fill">
+      <mat-label>Priority</mat-label>
+      <mat-select name="priority" [(ngModel)]="request.priority">
+        <mat-option value="routine">routine</mat-option>
+        <mat-option value="urgent">urgent</mat-option>
+        <mat-option value="asap">asap</mat-option>
+        <mat-option value="stat">stat</mat-option>
+      </mat-select>
+    </mat-form-field> <br>
+    <mat-form-field class="max-width">
+      <mat-label>Requester</mat-label>
+      <input type="text" name="requester" matInput [(ngModel)]="request.requester">
+    </mat-form-field> <br>
+    <mat-form-field class="max-width">
+      <mat-label>Details</mat-label>
+      <textarea matInput name="orderDetail" [(ngModel)]="request.orderDetail"></textarea>
+    </mat-form-field> <br>
+    <mat-form-field class="max-width">
+      <mat-label>Performer</mat-label>
+      <input matInput type="text" name="performer" [(ngModel)]="request.performer">
+    </mat-form-field> <br>
+    <mat-form-field class="max-width" appearance="fill">
+      <mat-label>Status</mat-label>
+      <mat-select name="status" [(ngModel)]="request.status">
+        <mat-option value="draft">draft</mat-option>
+        <mat-option value="active">active</mat-option>
+        <mat-option value="on-hold">on-hold</mat-option>
+        <mat-option value="revoked">revoked</mat-option>
+        <mat-option value="completed">completed</mat-option>
+        <mat-option value="entered-in-error">entered-in-error</mat-option>
+        <mat-option value="unknown">unknown</mat-option>
+      </mat-select>
+    </mat-form-field> <br>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button type="submit" mat-raised-button color="primary" class="max-width" (click)="update()">Update</button>
+</div>
+

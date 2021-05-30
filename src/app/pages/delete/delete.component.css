@@ -1,0 +1,32 @@
+.mat-card {
+    max-width: 400px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: start;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mat-card-title {
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.item-detail {
+    text-align: left !important;
+    font-weight: normal !important;
+}
+
+.item {
+    float: right;
+    font-weight: normal;
+}
+

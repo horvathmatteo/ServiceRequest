@@ -1,0 +1,29 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.mat-toolbar {
+    background: blue;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.mat-icon-button {
+    background: blue;
+    color: white;
+}
+
+.mat-icon {
+    font-size: 30px;
+}
+
+.nav-item{
+    margin-top: 15px;
+}
+
+.title {
+    font-size: 30px;
+    color: white;
+}

@@ -1,0 +1,16 @@
+
+    <mat-card>
+      <mat-card-title>{{item.subject}}</mat-card-title>
+      <mat-card-content>
+        <div class="subtitle" *ngIf="item.category">Category: <span class="item spacer">{{item.category}}</span></div>
+        <div class="subtitle" *ngIf="item.priority">Priority: <span class="item">{{item.priority}}</span></div>
+        <div class="subtitle" *ngIf="item.status">Status: <span class="item">{{item.status}}</span></div>
+        <div class="subtitle" *ngIf="item.requester">Requester: <span class="item">{{item.requester}}</span></div>
+        <div class="subtitle" *ngIf="item.orderDetail">Detail: <div class="item-detail">{{item.orderDetail}}</div></div>
+        <div class="subtitle" *ngIf="item.performer">Performer: <span class="item">{{item.performer}}</span></div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="btn" mat-icon-button><mat-icon>delete</mat-icon></button>
+      </mat-card-actions>
+    </mat-card>
+

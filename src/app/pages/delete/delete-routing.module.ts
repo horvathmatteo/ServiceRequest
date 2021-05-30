@@ -1,0 +1,19 @@
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { DeleteComponent } from "./delete.component";
+
+const routes: Routes = [
+    {
+        path: '',
+        component: DeleteComponent,
+        data: {title: 'Delete - ServiceRequest'}
+    }
+]
+
+@NgModule({
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
+})
+export class DeleteRoutingModule {
+
+}
